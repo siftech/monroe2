@@ -1,9 +1,13 @@
 Monroe 2 is a new version of the Monroe random plan generator
-originally developed by Nate Blaylock and described in his paper (with
-James Allen), "Hierarchical Goal Recognition," which appears in
+originally developed by Nate Blaylock and described in his papers (with
+James Allen),
+
+* "Hierarchical Goal Recognition," In:
 Sukthankar, G., Goldman, R.P., Geib, C., Pynadath, D.V., Bui,
 H.H. (Eds.), 2014. *Plan, Activity, and Intent Recognition: Theory and
-Practice*. Elsevier, Amsterdam.
+Practice*. Elsevier, Amsterdam and
+
+* Generating artificial corpora for plan recognition. In: Ardissono, L., Brna, P., Mitrovic, A. (Eds.), 2005, *User Modeling 2005*. Springer, Edinburgh, pp. 179–188.
 
 Some discussion of Monroe 2 may be found in my paper ["Plan Recognition for Network Analysis: Preliminary Report,"](http://rpgoldman.goldman-tribe.org/papers/pair2018.pdf) which was presented at the 2018 Plan, Activity, and Intent Recognition (PAIR) workshop.
 
