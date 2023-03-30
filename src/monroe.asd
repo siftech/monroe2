@@ -3,14 +3,14 @@
   )
 (in-package :monroe-asd)
 (defsystem monroe
-  :depends-on ("shop3")
+    ;; need new version of SHOP3 with its own random function
+  :depends-on ((version "shop3" "4"))
   :license "BSD 3-clause"
-  :serial t
-  :version "3.1"
+  :serial tg
+  :version "4.0.0"
   :components ((:file "package")
                (:file "nlib") ;; my library
                (:file "config")
-               ;; (:file "shop2random") ;; planner
                (:file "planlib")      ;; code for generating plan lib
                (:file "monroe_plib")  ;; plan library
                (:file "monroe_state") ;; state
