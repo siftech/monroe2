@@ -22,11 +22,11 @@ we can override it."))
   (:documentation "This is the configuration class for Nate's original
   MONROE."))
 
-(defgeneric plan-ok ((obj monroe-config) plan)
+(defgeneric plan-ok (monroe-config plan)
   (:documentation "Predicate to be called on each plan to decide if
   it's acceptable."))
 
-(defgeneric generate-goal-and-start-state ((obj monroe-config) schema)
+(defgeneric generate-goal-and-start-state (monroe-config schema)
   (:documentation "Takes a configuration object and a goal schema as
   arguments and returns a list, whose FIRST is a revised task and
   whose SECOND is a start state."))
