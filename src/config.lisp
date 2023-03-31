@@ -7,7 +7,7 @@
     )
    (plan-package
     :initarg :plan-package
-    :reader plan-package
+    :type (or package string symbol)
     )
    (domain-name
     :initarg :domain-name
@@ -55,6 +55,12 @@ subgoals"))
   (:documentation "Returns a list of *unique* method schemas from 
 the domain so things like GET-TO will just be 1 schema, even though
 there are many different method bodies."))
+
+(defmethod plan-package ((obj monroe-config))
+  (with-slots (plan-package) obj
+    (etypecase plan-package
+      (package plan-package)
+      ((or symbol string) (uiop:find-package* plan-package)))))
 
 ;;; specials
 (declaim (special *top-goals* *flat-output*))
